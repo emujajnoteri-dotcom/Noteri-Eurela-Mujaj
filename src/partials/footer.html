@@ -2,7 +2,11 @@
   <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-3">
 
     <div>
-      <p class="font-serif text-lg text-white">{{ business.publicName }}</p>
+      <span class="flex items-center gap-2.5">
+        <span class="text-lg font-semibold uppercase tracking-[0.22em] text-white">{{ site.wordmark }}</span>
+        <img src="/assets/img/feather-gold.svg" alt="" aria-hidden="true" class="h-5 w-auto" width="100" height="72">
+      </span>
+      <p class="mt-2 text-white">{{ site.personName }}</p>
       <p class="mt-1 text-xs uppercase tracking-[0.18em] text-gold-500">{{ site.tagline }}</p>
       <p class="mt-4 text-sm leading-relaxed text-ink-400">
         {{ footer.nipt }}: {{ business.nipt }}

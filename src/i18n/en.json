@@ -23,7 +23,10 @@
   "site": {
     "name": "Notary Dr. Eurela Mujaj",
     "tagline": "Notary Office — Shkodër",
-    "titleSuffix": "Notary Dr. Eurela Mujaj — Shkodër"
+    "titleSuffix": "Notary Dr. Eurela Mujaj — Shkodër",
+    "wordmark": "NOTARY",
+    "personName": "Eurela Mujaj (Shkreli)",
+    "logoAlt": "Logo: notarial quill"
   },
   "business": {
     "legalName": "Eurela Mujaj",

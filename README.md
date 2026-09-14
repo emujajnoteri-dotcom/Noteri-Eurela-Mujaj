@@ -72,14 +72,18 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
 - [ ] **Formspree** — krijo një form te https://formspree.io dhe zëvendëso
       `FORM_ENDPOINT` te `src/assets/js/main.js`. Deri atëherë formulari
       shfaq mesazhin e gabimit.
-- [ ] **Logo** — `logo_reference.png` nga kartvizita; tani është placeholder
-      tekstual me ikonë pendë te `src/partials/header.html` dhe `public/favicon.svg`.
 - [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
 ## Shënime përmbajtjeje
 
 - **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
   arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
+- **Logoja** — pendja u vektorizua nga fotoja e kartvizitës (501x633, pa mjete
+  gjurmimi në makinë): prerje → BMP → gjurmim konturesh në Python → bezier.
+  Del si `feather-dark.svg` / `feather-gold.svg` (skedarë të jashtëm, ndaj
+  ngarkohen një herë e ruhen në cache) plus `public/favicon.svg`. Blloku i
+  logos — fjala e markës + pendë, emri poshtë — ndjek kartvizitën.
+  Nëse gjendet ndonjëherë origjinali vektorial, zëvendëso të tre skedarët.
 - **Fotot** — `zyra-fasade.jpg` (ballina, edhe burim i `og-image.jpg`) dhe
   `eurela-mujaj.jpg` (portreti te "Rreth Noteres"). Të dyja janë konvertuar nga
   PNG në JPEG dhe përmasuar për 2x retina; kutitë e tyre kanë raportin e saktë

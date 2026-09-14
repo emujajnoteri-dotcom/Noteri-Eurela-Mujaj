@@ -23,7 +23,10 @@
   "site": {
     "name": "Notere Dr. Eurela Mujaj",
     "tagline": "Zyrë Noteriale — Shkodër",
-    "titleSuffix": "Notere Dr. Eurela Mujaj — Shkodër"
+    "titleSuffix": "Notere Dr. Eurela Mujaj — Shkodër",
+    "wordmark": "NOTERE",
+    "personName": "Eurela Mujaj (Shkreli)",
+    "logoAlt": "Logo: pendë noteriale"
   },
   "business": {
     "legalName": "Eurela Mujaj",
