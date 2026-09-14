@@ -70,7 +70,6 @@
     "getDirections": "Shiko në hartë",
     "callNow": "Telefono tani",
     "sendEmail": "Dërgo email",
-    "portraitPending": "portret — në pritje",
     "whatsapp": "Shkruaj në WhatsApp",
     "whatsappShort": "WhatsApp",
     "whatsappAria": "Na shkruani në WhatsApp"
@@ -220,7 +219,8 @@
           "title": "Siguri juridike",
           "body": "Aktet noteriale garantojnë vlerë provuese dhe qëndrueshmëri ligjore."
         }
-      ]
+      ],
+      "portraitAlt": "Portret i Noteres Dr. Eurela Mujaj (Shkreli)"
     },
     "contact": {
       "title": "Kontakt",

@@ -70,7 +70,6 @@
     "getDirections": "View on map",
     "callNow": "Call now",
     "sendEmail": "Send email",
-    "portraitPending": "portrait — pending",
     "whatsapp": "Message on WhatsApp",
     "whatsappShort": "WhatsApp",
     "whatsappAria": "Message us on WhatsApp"
@@ -220,7 +219,8 @@
           "title": "Legal certainty",
           "body": "Notarial deeds guarantee evidentiary value and legal durability."
         }
-      ]
+      ],
+      "portraitAlt": "Portrait of Notary Dr. Eurela Mujaj (Shkreli)"
     },
     "contact": {
       "title": "Contact",

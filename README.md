@@ -74,14 +74,16 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
       shfaq mesazhin e gabimit.
 - [ ] **Logo** — `logo_reference.png` nga kartvizita; tani është placeholder
       tekstual me ikonë pendë te `src/partials/header.html` dhe `public/favicon.svg`.
-- [ ] **Foto portret** — placeholder te `src/pages/rreth-nesh.html`.
-      Fasada e zyrës është vendosur te ballina (`src/assets/img/zyra-fasade.jpg`).
 - [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
 ## Shënime përmbajtjeje
 
 - **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
   arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
+- **Fotot** — `zyra-fasade.jpg` (ballina, edhe burim i `og-image.jpg`) dhe
+  `eurela-mujaj.jpg` (portreti te "Rreth Noteres"). Të dyja janë konvertuar nga
+  PNG në JPEG dhe përmasuar për 2x retina; kutitë e tyre kanë raportin e saktë
+  të burimit (`aspect-[4/3]` dhe `aspect-[4/5]`), ndaj `object-cover` nuk pret.
 - **Dokumentacioni** — `pages.documents.categories` te të dy JSON-at, me fushat
   `{ sherbimi, dokumentet[] }`. Akordeoni është `<details>`/`<summary>` native:
   aksesueshëm me tastierë dhe pa asnjë rresht JS. Nga i njëjti array gjenerohet
