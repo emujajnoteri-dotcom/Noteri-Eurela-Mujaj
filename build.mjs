@@ -259,6 +259,13 @@ async function build() {
   const dicts = {};
   for (const l of LOCALES) dicts[l] = JSON.parse(await readFile(join(SRC, 'i18n', `${l}.json`), 'utf8'));
 
+  // Lista e sheshte e sherbimeve derivohet nga kategorite: ballina e perdor ate,
+  // faqja e sherbimeve kategorite. Nje burim i vetem, ndaj s'dalin jashte sinkroni.
+  for (const l of LOCALES) {
+    const svc = dicts[l].services;
+    if (svc?.categories) svc.items = svc.categories.flatMap((c) => c.items);
+  }
+
   // Shablloni nuk ka lak numerik, ndaj `yje: 5` kthehet ne nje varg prej 5
   // elementesh te ndezur/fikur. Keshtu {{#each stars}} punon per cdo vlere,
   // jo vetem per 5, pa e ndotur JSON-in me te dhena prezantimi.

@@ -84,20 +84,49 @@
   },
   "services": {
     "intro": "The Notary Office provides comprehensive notarial services for individuals, families and legal entities, guaranteeing professionalism, impartiality, confidentiality and legal certainty.",
-    "items": [
-      "Drafting and editing of notarial deeds and contracts",
-      "Contracts of sale, donation, exchange and transfer of ownership",
-      "Legal transactions concerning immovable property and its registration",
-      "Construction, contracting and commissioning agreements",
-      "Wills, certificates of inheritance and other succession deeds",
-      "Powers of attorney and notarial declarations",
-      "Certifications and true copies of documents",
-      "Notarial acts for commercial companies and legal entities",
-      "Contracts and deeds relating to family and matrimonial property matters",
-      "Legalisation and authentication of signatures and other notarial acts",
-      "Legal and notarial advice and assistance",
-      "Other notarial services under applicable legislation",
-      "Translations in all languages"
+    "categories": [
+      {
+        "titulli": "Real Estate",
+        "items": [
+          "Contracts of sale, donation, exchange and transfer of ownership",
+          "Legal transactions concerning immovable property and its registration"
+        ]
+      },
+      {
+        "titulli": "Construction & Contracting",
+        "items": [
+          "Construction, contracting and commissioning agreements"
+        ]
+      },
+      {
+        "titulli": "Inheritance & Wills",
+        "items": [
+          "Wills, certificates of inheritance and other succession deeds"
+        ]
+      },
+      {
+        "titulli": "Powers of Attorney & Notarial Declarations",
+        "items": [
+          "Powers of attorney and notarial declarations"
+        ]
+      },
+      {
+        "titulli": "Certifications, Legalisation & Signatures",
+        "items": [
+          "Certifications and true copies of documents",
+          "Legalisation and authentication of signatures and other notarial acts"
+        ]
+      },
+      {
+        "titulli": "Business, Family & Other Services",
+        "items": [
+          "Notarial acts for commercial companies and legal entities",
+          "Contracts and deeds relating to family and matrimonial property matters",
+          "Legal and notarial advice and assistance",
+          "Translations in all languages",
+          "Other notarial services under applicable legislation"
+        ]
+      }
     ]
   },
   "pages": {

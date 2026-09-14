@@ -84,20 +84,49 @@
   },
   "services": {
     "intro": "Zyra Noteriale ofron shërbime të plota noteriale për individë, familje dhe subjekte juridike, duke garantuar profesionalizëm, paanshmëri, konfidencialitet dhe siguri juridike.",
-    "items": [
-      "Hartim dhe redaktim të akteve dhe kontratave noteriale",
-      "Kontrata shitblerjeje, dhurimi, shkëmbimi dhe kalimi pronësie",
-      "Veprime juridike lidhur me pasuritë e paluajtshme dhe regjistrimin e tyre",
-      "Kontrata sipërmarrjeje, porosie dhe marrëdhënie të tjera në fushën e ndërtimit",
-      "Testamente, dëshmi trashëgimie dhe akte të tjera të trashëgimisë",
-      "Prokura dhe deklarata noteriale",
-      "Vërtetime dhe njësime me origjinalin të dokumenteve",
-      "Veprime noteriale për shoqëri tregtare dhe persona juridikë",
-      "Kontrata dhe akte që lidhen me marrëdhëniet familjare dhe pasurore",
-      "Legalizim/njohje të nënshkrimeve dhe akte të tjera noteriale",
-      "Këshillim dhe asistencë juridiko-noteriale",
-      "Shërbime të tjera noteriale sipas legjislacionit në fuqi",
-      "Përkthime në të gjitha gjuhët"
+    "categories": [
+      {
+        "titulli": "Pasuri të Paluajtshme",
+        "items": [
+          "Kontrata shitblerjeje, dhurimi, shkëmbimi dhe kalimi pronësie",
+          "Veprime juridike lidhur me pasuritë e paluajtshme dhe regjistrimin e tyre"
+        ]
+      },
+      {
+        "titulli": "Ndërtim & Sipërmarrje",
+        "items": [
+          "Kontrata sipërmarrjeje, porosie dhe marrëdhënie të tjera në fushën e ndërtimit"
+        ]
+      },
+      {
+        "titulli": "Trashëgimi & Testamente",
+        "items": [
+          "Testamente, dëshmi trashëgimie dhe akte të tjera të trashëgimisë"
+        ]
+      },
+      {
+        "titulli": "Prokura & Deklarata Noteriale",
+        "items": [
+          "Prokura dhe deklarata noteriale"
+        ]
+      },
+      {
+        "titulli": "Vërtetime, Legalizime & Njohje Nënshkrimesh",
+        "items": [
+          "Vërtetime dhe njësime me origjinalin të dokumenteve",
+          "Legalizim/njohje të nënshkrimeve dhe akte të tjera noteriale"
+        ]
+      },
+      {
+        "titulli": "Biznes, Familje & Shërbime të Tjera",
+        "items": [
+          "Veprime noteriale për shoqëri tregtare dhe persona juridikë",
+          "Kontrata dhe akte që lidhen me marrëdhëniet familjare dhe pasurore",
+          "Këshillim dhe asistencë juridiko-noteriale",
+          "Përkthime në të gjitha gjuhët",
+          "Shërbime të tjera noteriale sipas legjislacionit në fuqi"
+        ]
+      }
     ]
   },
   "pages": {

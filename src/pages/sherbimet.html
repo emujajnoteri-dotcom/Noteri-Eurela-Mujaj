@@ -12,14 +12,21 @@
       {{ services.intro }}
     </p>
 
-    <ul class="mt-14 grid gap-x-12 gap-y-1 lg:grid-cols-2">
-      {{#each services.items}}
-      <li class="flex items-start gap-4 border-b border-ink-100 py-5">
-        <span class="mt-0.5 font-serif text-sm text-gold-600 tabular-nums">{{ @number }}</span>
-        <span class="text-ink-800">{{ . }}</span>
-      </li>
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{#each services.categories}}
+      <div class="border-t border-ink-200 pt-4">
+        <h3 class="font-sans font-medium text-ink-900">{{ titulli }}</h3>
+        <ul class="mt-2 space-y-2">
+          {{#each items}}
+          <li class="flex gap-2.5 text-sm leading-relaxed text-ink-600">
+            <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold-600" aria-hidden="true"></span>
+            <span>{{ . }}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
       {{/each}}
-    </ul>
+    </div>
 
     <!-- Cmimet nuk shfaqen — kerkese e klientes (brief sek. 6) -->
     <div class="mt-14 rounded-sm bg-ink-50 px-8 py-10">

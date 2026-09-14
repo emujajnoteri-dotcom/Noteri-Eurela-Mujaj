@@ -99,6 +99,13 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
   `eurela-mujaj.jpg` (portreti te "Rreth Noteres"). Të dyja janë konvertuar nga
   PNG në JPEG dhe përmasuar për 2x retina; kutitë e tyre kanë raportin e saktë
   të burimit (`aspect-[4/3]` dhe `aspect-[4/5]`), ndaj `object-cover` nuk pret.
+- **Shërbimet** — `services.categories` te të dy JSON-at, me fushat
+  `{ titulli, items[] }`. `services.items` (lista e sheshtë që përdor ballina)
+  **nuk ruhet** në JSON: `build.mjs` e deriva nga kategoritë, ndaj ballina dhe
+  faqja e shërbimeve s'dalin dot jashtë sinkroni. Kartat ripërdorin komponentin
+  e "Parimet e punës" te `rreth-nesh.html` — `border-t border-ink-200 pt-4`.
+  Titulli kërkon `font-sans` shprehimisht, sepse rregulli bazë i jep `h3`-së
+  `font-serif`.
 - **Dokumentacioni** — `pages.documents.categories` te të dy JSON-at, me fushat
   `{ sherbimi, dokumentet[] }`. Akordeoni është `<details>`/`<summary>` native:
   aksesueshëm me tastierë dhe pa asnjë rresht JS. Nga i njëjti array gjenerohet
