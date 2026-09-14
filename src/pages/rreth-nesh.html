@@ -19,6 +19,37 @@
       <h2 class="font-serif text-2xl">{{ page.bioTitle }}</h2>
       <p class="mt-4 leading-relaxed text-ink-700">{{ page.bio }}</p>
 
+      <h2 class="mt-12 font-serif text-2xl">{{ page.academiaTitle }}</h2>
+      <p class="mt-4 leading-relaxed text-ink-700">{{ page.academiaBody }}</p>
+
+      <div class="mt-9 grid gap-9 sm:grid-cols-2">
+        <div>
+          <p class="eyebrow">{{ page.educationTitle }}</p>
+          <ul class="mt-4 space-y-5">
+            {{#each page.education}}
+            <li class="border-l-2 border-gold-500 pl-4">
+              <p class="font-medium text-ink-900">{{ titulli }}</p>
+              <p class="mt-1 text-sm leading-snug text-ink-600">{{ institucioni }}</p>
+              <p class="mt-1 text-xs tabular-nums text-ink-500">{{ periudha }}</p>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+
+        <div>
+          <p class="eyebrow">{{ page.teachingTitle }}</p>
+          <ul class="mt-4 space-y-5">
+            {{#each page.teaching}}
+            <li class="border-l-2 border-ink-200 pl-4">
+              <p class="font-medium text-ink-900">{{ titulli }}</p>
+              <p class="mt-1 text-sm leading-snug text-ink-600">{{ institucioni }}</p>
+              <p class="mt-1 text-xs text-ink-500">{{ page.subjectLabel }}: {{ lenda }} &middot; {{ periudha }}</p>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+
       <!-- Diferencues i rendesishem per trust (brief sek. 5) -->
       <div class="mt-10 border-l-2 border-gold-500 bg-ink-50 py-6 pl-6 pr-6">
         <h2 class="font-serif text-xl">{{ page.archiveTitle }}</h2>

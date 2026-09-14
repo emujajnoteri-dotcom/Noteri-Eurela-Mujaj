@@ -72,10 +72,21 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
 - [ ] **Formspree** — krijo një form te https://formspree.io dhe zëvendëso
       `FORM_ENDPOINT` te `src/assets/js/main.js`. Deri atëherë formulari
       shfaq mesazhin e gabimit.
-- [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
 ## Shënime përmbajtjeje
 
+- **Viti i fillimit** — i gjithë site-i thotë **dhjetor 2016** dhe "pothuajse
+  10 vite", sipas emërimit si notere publike (LinkedIn). Kujdes: QKB e ka
+  regjistrimin e subjektit më **17/01/2017** (`business.registered`). Të dyja
+  mund të jenë të vërteta — emërim në dhjetor, regjistrim i subjektit në janar
+  — por nëse dikush krahason me QKB-në, mos u befaso. Për ta kthyer te 2017,
+  ndrysho `business.since` dhe pesë tekstet që e përmendin vitin: dy te
+  `pages.home` (metaDescription, heroSubtitle), `pages.home.trust[0].body`,
+  dhe dy te `pages.about` (metaDescription, bio).
+- **Kredencialet** — `pages.about.education` dhe `pages.about.teaching` te të
+  dy JSON-at. Nga të njëjtat të dhëna ndërtohet nyja `Person` e JSON-LD
+  (alumniOf, affiliation, knowsAbout), ndaj faqja dhe markup-i s'dalin jashtë
+  sinkroni. Të dhënat vijnë nga LinkedIn dhe presin konfirmim nga Eurela.
 - **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
   arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
 - **Logoja** — pendja u vektorizua nga fotoja e kartvizitës (501x633, pa mjete

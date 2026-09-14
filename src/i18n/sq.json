@@ -34,8 +34,8 @@
     "nipt": "L76317002C",
     "registered": "17/01/2017",
     "city": "Shkodër",
-    "since": "2017",
-    "experience": "mbi 9 vite",
+    "since": "2016",
+    "experience": "pothuajse 10 vite",
     "phone": "+355696130876",
     "phoneDisplay": "+355 (0) 69 6130876",
     "email": "meurela@yahoo.com",
@@ -103,14 +103,14 @@
   "pages": {
     "home": {
       "title": "Zyrë Noteriale në Shkodër",
-      "metaDescription": "Zyra Noteriale e Dr. Eurela Mujaj (Shkreli) në Shkodër — kontrata, prokura, testamente, vërtetime dhe shërbime të plota noteriale që prej 2017.",
+      "metaDescription": "Zyra Noteriale e Dr. Eurela Mujaj (Shkreli) në Shkodër — kontrata, prokura, testamente, vërtetime dhe shërbime të plota noteriale që prej 2016.",
       "heroTitle": "Siguri juridike, me përkushtim dhe paanshmëri",
-      "heroSubtitle": "Zyrë noteriale në Shkodër, në shërbim të individëve, familjeve dhe subjekteve juridike që prej 2017.",
+      "heroSubtitle": "Zyrë noteriale në Shkodër, në shërbim të individëve, familjeve dhe subjekteve juridike që prej 2016.",
       "trustTitle": "Pse zyra jonë",
       "trust": [
         {
           "title": "Eksperiencë e provuar",
-          "body": "Në shërbim të qytetarëve të Shkodrës që prej vitit 2017, me mbi 9 vite praktikë noteriale."
+          "body": "Në shërbim të qytetarëve të Shkodrës që prej dhjetorit 2016, me pothuajse 10 vite praktikë noteriale."
         },
         {
           "title": "Konfidencialitet i plotë",
@@ -198,10 +198,10 @@
     },
     "about": {
       "title": "Rreth Noteres",
-      "metaDescription": "Notere Dr. Eurela Mujaj (Shkreli) — zyrë noteriale në Shkodër që prej vitit 2017.",
+      "metaDescription": "Notere Dr. Eurela Mujaj (Shkreli) — zyrë noteriale në Shkodër që prej 2016. Doktoraturë në të Drejtën Penale dhe pedagoge e së drejtës penale.",
       "lead": "Notere Dr. Eurela Mujaj (Shkreli)",
       "bioTitle": "Përvoja",
-      "bio": "Zyra Noteriale e Dr. Eurela Mujaj (Shkreli) ushtron aktivitetin në Shkodër që prej vitit 2017, me mbi 9 vite përvojë në hartimin dhe vërtetimin e akteve noteriale për individë, familje dhe subjekte juridike.",
+      "bio": "Dr. Eurela Mujaj (Shkreli) ushtron aktivitetin noterial në Shkodër që prej dhjetorit 2016, me pothuajse 10 vite përvojë në hartimin dhe vërtetimin e akteve noteriale për individë, familje dhe subjekte juridike.",
       "archiveTitle": "Arkiva noteriale",
       "archiveBody": "Zyra administron arkivën noteriale të ish-noteres Genciana Shkreli. Klientët që kërkojnë akte të lëshuara më parë nga kjo zyrë mund të drejtohen tek ne për kopje dhe vërtetime.",
       "valuesTitle": "Parimet e punës",
@@ -223,7 +223,45 @@
           "body": "Aktet noteriale garantojnë vlerë provuese dhe qëndrueshmëri ligjore."
         }
       ],
-      "portraitAlt": "Portret i Noteres Dr. Eurela Mujaj (Shkreli)"
+      "portraitAlt": "Portret i Noteres Dr. Eurela Mujaj (Shkreli)",
+      "academiaTitle": "Formimi akademik",
+      "academiaBody": "Përveç praktikës noteriale, Dr. Mujaj mban një doktoraturë (PhD) në të Drejtën Penale nga European University of Tirana dhe është aktive në fushën akademike si pedagoge e së drejtës penale dhe procedurës penale në disa universitete në Shkodër dhe Tiranë. Ky kombinim i praktikës me akademinë sjell rigorozitet shtesë në çdo akt të hartuar.",
+      "subjectLabel": "Lënda",
+      "educationTitle": "Arsimimi",
+      "education": [
+        {
+          "titulli": "Doktoraturë (PhD) në të Drejtën Penale",
+          "institucioni": "European University of Tirana",
+          "periudha": "2011–2014"
+        },
+        {
+          "titulli": "Jurist",
+          "institucioni": "Fakulteti i Drejtësisë, Universiteti «Luigj Gurakuqi», Shkodër",
+          "periudha": "2000–2004"
+        }
+      ],
+      "teachingTitle": "Veprimtaria akademike",
+      "teaching": [
+        {
+          "titulli": "Pedagoge e Asociuar",
+          "institucioni": "European University of Tirana",
+          "lenda": "E Drejta Penale",
+          "periudha": "që prej 2014"
+        },
+        {
+          "titulli": "Lektore",
+          "institucioni": "Universiteti «Argenti», Shkodër",
+          "lenda": "Procedurë Penale",
+          "periudha": "që prej 2013"
+        },
+        {
+          "titulli": "Lektore",
+          "institucioni": "Universiteti «Gjon Buzuku», Shkodër",
+          "lenda": "Kriminologji dhe Penologji",
+          "periudha": "që prej 2011"
+        }
+      ],
+      "jobTitle": "Notere Publike"
     },
     "contact": {
       "title": "Kontakt",

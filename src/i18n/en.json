@@ -34,8 +34,8 @@
     "nipt": "L76317002C",
     "registered": "17/01/2017",
     "city": "Shkodër",
-    "since": "2017",
-    "experience": "over 9 years",
+    "since": "2016",
+    "experience": "nearly 10 years",
     "phone": "+355696130876",
     "phoneDisplay": "+355 (0) 69 6130876",
     "email": "meurela@yahoo.com",
@@ -103,14 +103,14 @@
   "pages": {
     "home": {
       "title": "Notary Office in Shkodër",
-      "metaDescription": "The Notary Office of Dr. Eurela Mujaj (Shkreli) in Shkodër — contracts, powers of attorney, wills, certifications and full notarial services since 2017.",
+      "metaDescription": "The Notary Office of Dr. Eurela Mujaj (Shkreli) in Shkodër — contracts, powers of attorney, wills, certifications and full notarial services since 2016.",
       "heroTitle": "Legal certainty, with dedication and impartiality",
-      "heroSubtitle": "A notary office in Shkodër, serving individuals, families and legal entities since 2017.",
+      "heroSubtitle": "A notary office in Shkodër, serving individuals, families and legal entities since 2016.",
       "trustTitle": "Why our office",
       "trust": [
         {
           "title": "Proven experience",
-          "body": "Serving the citizens of Shkodër since 2017, with over 9 years of notarial practice."
+          "body": "Serving the citizens of Shkodër since December 2016, with nearly 10 years of notarial practice."
         },
         {
           "title": "Full confidentiality",
@@ -198,10 +198,10 @@
     },
     "about": {
       "title": "About",
-      "metaDescription": "Notary Dr. Eurela Mujaj (Shkreli) — notary office in Shkodër since 2017.",
+      "metaDescription": "Notary Dr. Eurela Mujaj (Shkreli) — notary office in Shkodër since 2016. PhD in Criminal Law and lecturer in criminal law.",
       "lead": "Notary Dr. Eurela Mujaj (Shkreli)",
       "bioTitle": "Experience",
-      "bio": "The Notary Office of Dr. Eurela Mujaj (Shkreli) has been practising in Shkodër since 2017, with over 9 years of experience drafting and certifying notarial deeds for individuals, families and legal entities.",
+      "bio": "Dr. Eurela Mujaj (Shkreli) has practised as a notary public in Shkodër since December 2016, with nearly 10 years of experience drafting and certifying notarial acts for individuals, families and legal entities.",
       "archiveTitle": "Notarial archive",
       "archiveBody": "The office administers the notarial archive of former notary Genciana Shkreli. Clients seeking deeds previously issued by that office may contact us for copies and certifications.",
       "valuesTitle": "Principles of practice",
@@ -223,7 +223,45 @@
           "body": "Notarial deeds guarantee evidentiary value and legal durability."
         }
       ],
-      "portraitAlt": "Portrait of Notary Dr. Eurela Mujaj (Shkreli)"
+      "portraitAlt": "Portrait of Notary Dr. Eurela Mujaj (Shkreli)",
+      "academiaTitle": "Academic background",
+      "academiaBody": "Beyond her notarial practice, Dr. Mujaj holds a PhD in Criminal Law from the European University of Tirana and is active academically, lecturing on criminal law and criminal procedure at several universities in Shkodër and Tirana. This combination of practice and academia brings additional rigour to every act she prepares.",
+      "subjectLabel": "Subject",
+      "educationTitle": "Education",
+      "education": [
+        {
+          "titulli": "PhD in Criminal Law",
+          "institucioni": "European University of Tirana",
+          "periudha": "2011–2014"
+        },
+        {
+          "titulli": "Law degree",
+          "institucioni": "Faculty of Law, \"Luigj Gurakuqi\" University, Shkodër",
+          "periudha": "2000–2004"
+        }
+      ],
+      "teachingTitle": "Academic positions",
+      "teaching": [
+        {
+          "titulli": "Assistant Professor",
+          "institucioni": "European University of Tirana",
+          "lenda": "Criminal Law",
+          "periudha": "since 2014"
+        },
+        {
+          "titulli": "Lecturer",
+          "institucioni": "\"Argenti\" University, Shkodër",
+          "lenda": "Criminal Procedure",
+          "periudha": "since 2013"
+        },
+        {
+          "titulli": "Lecturer",
+          "institucioni": "\"Gjon Buzuku\" University, Shkodër",
+          "lenda": "Criminology and Penology",
+          "periudha": "since 2011"
+        }
+      ],
+      "jobTitle": "Notary Public"
     },
     "contact": {
       "title": "Contact",

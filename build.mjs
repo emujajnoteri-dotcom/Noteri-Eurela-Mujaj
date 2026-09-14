@@ -203,6 +203,22 @@ function buildJsonLd(dict, pageId, canonical) {
 
   const nodes = [notary];
 
+  const about = dict.pages.about;
+  if (pageId === 'about' && about.education) {
+    const uni = (name) => ({ '@type': 'CollegeOrUniversity', name });
+    nodes.push({
+      '@type': 'Person',
+      name: dict.site.personName,
+      honorificPrefix: 'Dr.',
+      url: canonical,
+      jobTitle: [about.jobTitle, ...new Set(about.teaching.map((t) => t.titulli))],
+      alumniOf: about.education.map((e) => uni(e.institucioni)),
+      affiliation: [...new Set(about.teaching.map((t) => t.institucioni))].map(uni),
+      knowsAbout: [...new Set(about.teaching.map((t) => t.lenda))],
+      worksFor: { '@type': 'Notary', name: b.publicName, url: SITE_URL + dict.routes.home },
+    });
+  }
+
   const cats = dict.pages.documents?.categories;
   if (pageId === 'documents' && cats?.length) {
     nodes.push({
