@@ -135,8 +135,64 @@
       "title": "Dokumentet e nevojshme",
       "metaDescription": "Dokumentet që duhet të sillni për veprimet noteriale në zyrën e Dr. Eurela Mujaj, Shkodër.",
       "lead": "Lista e dokumenteve që duhet të sillni ndryshon sipas llojit të aktit noterial.",
-      "placeholderTitle": "Në përgatitje",
-      "placeholderBody": "Lista e detajuar e dokumenteve për çdo shërbim është duke u përgatitur. Deri atëherë, ju lutemi na kontaktoni dhe ju udhëzojmë saktësisht se çfarë duhet të sillni për rastin tuaj."
+      "questionTemplate": "Çfarë dokumentesh nevojiten për {s}?",
+      "note": "Lista është orientuese. Kërkesat mund të ndryshojnë sipas rastit konkret dhe legjislacionit në fuqi.",
+      "ctaTitle": "Rasti juaj nuk është në listë?",
+      "ctaBody": "Na kontaktoni dhe ju udhëzojmë saktësisht se çfarë duhet të sillni.",
+      "categories": [
+        {
+          "sherbimi": "Kontratë Shitblerjeje (Pasuri e Paluajtshme)",
+          "dokumentet": [
+            "Certifikatë pronësie / ekstrakt nga ASHK (Agjencia Shtetërore e Kadastrës)",
+            "Dokument identifikimi (kartë ID ose pasaportë) i shitësit dhe blerësit",
+            "Certifikatë martese/familjare (nëse prona është pasuri bashkëshortore)",
+            "Prokurë noteriale (nëse njëra palë përfaqësohet)",
+            "Vërtetim shlyerje detyrimesh/taksash mbi pronën (nëse kërkohet)"
+          ]
+        },
+        {
+          "sherbimi": "Prokurë",
+          "dokumentet": [
+            "Dokument identifikimi i personit që jep prokurën",
+            "Të dhënat e plota të personit që merr prokurën (emër, atësi/mbiemër, adresë)",
+            "Përshkrim i qartë i veprimit/veprimeve që autorizohen",
+            "Për prokura që do përdoren jashtë shtetit: informohuni paraprakisht për kërkesat e apostilimit"
+          ]
+        },
+        {
+          "sherbimi": "Testament",
+          "dokumentet": [
+            "Dokument identifikimi i testatorit",
+            "Të dhëna të plota të trashëgimtarëve/përfituesve (emër, atësi, adresë)",
+            "Përshkrim i pasurive që përfshihen (nëse specifikohen individualisht)"
+          ]
+        },
+        {
+          "sherbimi": "Dëshmi Trashëgimie",
+          "dokumentet": [
+            "Certifikatë vdekje e trashëgimlënësit",
+            "Certifikatë familjare",
+            "Dokument identifikimi i trashëgimtarëve",
+            "Akte pronësie të pasurive që lihen trashëgim (nëse ka)"
+          ]
+        },
+        {
+          "sherbimi": "Dhurim",
+          "dokumentet": [
+            "Dokument identifikimi i dhuruesit dhe i personit që përfiton dhurimin",
+            "Certifikatë pronësie e pasurisë që dhurohet",
+            "Certifikatë familjare (nëse dhurimi bëhet ndërmjet familjarësh)"
+          ]
+        },
+        {
+          "sherbimi": "Kontratë Qeraje",
+          "dokumentet": [
+            "Dokument identifikimi i palëve (qiradhënës dhe qiramarrës)",
+            "Certifikatë pronësie e pronës që jepet me qera",
+            "Kushtet e marrëveshjes (afati, vlera e qerasë)"
+          ]
+        }
+      ]
     },
     "about": {
       "title": "Rreth Noteres",
@@ -207,7 +263,7 @@
     "source": "Google Reviews",
     "viewAll": "Shiko të gjitha në Google",
     "starsAria": "Vlerësuar {n} nga 5 yje",
-    "profileUrl": "https://www.google.com/maps/search/?api=1&query=Notere+Eurela+Mujaj+Shkod%C3%ABr",
+    "profileUrl": "https://maps.app.goo.gl/CDGqs2pZht1YT9EY9",
     "aggregate": {
       "rating": "5.0",
       "count": 17,

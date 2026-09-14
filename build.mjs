@@ -16,6 +16,19 @@ const OUT = 'dist';
 /** Ndrysho kur te regjistrohet domain-i final (shih brief seksioni 2). */
 const SITE_URL = (process.env.SITE_URL || 'https://noteriaeurela.al').replace(/\/$/, '');
 
+/** Koordinatat e verifikuara nga profili i Google Business i zyres. */
+const GEO = { latitude: 42.0639227, longitude: 19.5165579 };
+
+/**
+ * Orari ne forme te strukturuar per schema.org. Varianti per lexim nga njeriu
+ * rri te business.hours ne i18n; ky ketu eshte per makinat dhe s'perkthehet.
+ */
+const OPENING_HOURS = [
+  { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '15:30' },
+  { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '17:30', closes: '19:30' },
+  { days: ['Saturday'], opens: '08:30', closes: '12:30' },
+];
+
 const LOCALES = ['sq', 'en'];
 const DEFAULT_LOCALE = 'sq';
 
@@ -79,9 +92,12 @@ function renderBlocks(tpl, ctx) {
       const list = Array.isArray(value) ? value : [];
       out = list
         .map((item, i) => {
+          // isFirst/isLast si fjale te thjeshta sepse regexi i blloqeve pranon
+          // vetem [\w.]; `@index` punon te {{ }} por jo te {{#if}}.
+          const meta = { __item: item, '@index': i, '@number': i + 1, isFirst: i === 0, isLast: i === list.length - 1 };
           const scope = typeof item === 'object' && item !== null
-            ? { ...ctx, ...item, __item: item, '@index': i, '@number': i + 1 }
-            : { ...ctx, __item: item, '@index': i, '@number': i + 1 };
+            ? { ...ctx, ...item, ...meta }
+            : { ...ctx, ...meta };
           return renderVars(renderBlocks(body, scope), scope);
         })
         .join('');
@@ -140,6 +156,73 @@ function inlinePartials(tpl, partials, depth = 0) {
 const render = (tpl, ctx, partials) =>
   renderVars(renderBlocks(inlinePartials(tpl, partials), ctx), ctx);
 
+// ------------------------------------------------------------------- json-ld
+
+/**
+ * JSON-LD ndertohet si objekt dhe serializohet, jo si tekst me {{ }}: brenda
+ * nje <script> entitetet HTML nuk dekodohen, ndaj nje vlere si
+ * `Rruga "Edith Durham"` do t'i shkonte Google-it si `Rruga &quot;...&quot;`.
+ */
+function buildJsonLd(dict, pageId, canonical) {
+  const b = dict.business;
+
+  const notary = {
+    '@type': 'Notary',
+    name: b.publicName,
+    url: canonical,
+    telephone: b.phone,
+    email: b.email,
+    areaServed: b.city,
+    priceRange: '$$',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: `${b.address.street}, ${b.address.detail}`,
+      addressLocality: b.address.city,
+      postalCode: b.address.postalCode,
+      addressCountry: 'AL',
+    },
+    geo: { '@type': 'GeoCoordinates', ...GEO },
+    openingHoursSpecification: OPENING_HOURS.map((h) => ({
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: h.days,
+      opens: h.opens,
+      closes: h.closes,
+    })),
+  };
+
+  if (pageId === 'home' && dict.reviews) {
+    notary.sameAs = [dict.reviews.profileUrl];
+    notary.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: dict.reviews.aggregate.rating,
+      reviewCount: String(dict.reviews.aggregate.count),
+      bestRating: '5',
+      worstRating: '1',
+    };
+  }
+
+  const nodes = [notary];
+
+  const cats = dict.pages.documents?.categories;
+  if (pageId === 'documents' && cats?.length) {
+    nodes.push({
+      '@type': 'FAQPage',
+      mainEntity: cats.map((c) => ({
+        '@type': 'Question',
+        name: dict.pages.documents.questionTemplate.replace('{s}', c.sherbimi),
+        acceptedAnswer: { '@type': 'Answer', text: c.dokumentet.join('; ') + '.' },
+      })),
+    });
+  }
+
+  const payload = nodes.length === 1
+    ? { '@context': 'https://schema.org', ...nodes[0] }
+    : { '@context': 'https://schema.org', '@graph': nodes };
+
+  // `<` shpetohet qe nje vlere me </script> te mos e mbyllte bllokun
+  return JSON.stringify(payload, null, 2).replace(/</g, '\\u003c');
+}
+
 // ---------------------------------------------------------------- output path
 
 /** "/" -> dist/index.html ; "/en/services" -> dist/en/services/index.html */
@@ -197,6 +280,7 @@ async function build() {
         isHome: page.id === 'home',
         url: route,
         canonical: SITE_URL + route,
+        jsonLd: buildJsonLd(dict, page.id, SITE_URL + route),
         siteUrl: SITE_URL,
         year: new Date().getFullYear(),
         alternates,

@@ -76,15 +76,19 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
       tekstual me ikonë pendë te `src/partials/header.html` dhe `public/favicon.svg`.
 - [ ] **Foto portret** — placeholder te `src/pages/rreth-nesh.html`.
       Fasada e zyrës është vendosur te ballina (`src/assets/img/zyra-fasade.jpg`).
-- [ ] **Linku i Google Business** — `reviews.profileUrl` te të dy JSON-at është
-      ende një URL kërkimi në Maps; zëvendësoje me linkun e profilit real.
-- [ ] **Dokumentacioni** — lista për çdo shërbim, faza 2.
 - [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
 ## Shënime përmbajtjeje
 
 - **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
   arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
+- **Dokumentacioni** — `pages.documents.categories` te të dy JSON-at, me fushat
+  `{ sherbimi, dokumentet[] }`. Akordeoni është `<details>`/`<summary>` native:
+  aksesueshëm me tastierë dhe pa asnjë rresht JS. Nga i njëjti array gjenerohet
+  edhe markup-i FAQPage, ndaj lista dhe SEO-ja s'dalin kurrë jashtë sinkroni.
+- **JSON-LD** gjenerohet te `build.mjs`, jo me `{{ }}` te shablloni: brenda një
+  `<script>` entitetet HTML nuk dekodohen, ndaj `Rruga "Edith Durham"` do t'i
+  shkonte Google-it si `Rruga &quot;...&quot;`.
 - **Reviews** — `reviews.items` te të dy JSON-at, me fushat
   `{ emri, teksti, yje, data }`. Yjet nuk ruhen si ikona: `build.mjs` e kthen
   `yje` në një varg 5-elementësh të ndezur/fikur, që numri të mbetet e dhënë

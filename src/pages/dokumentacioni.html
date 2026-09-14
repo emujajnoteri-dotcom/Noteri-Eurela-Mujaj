@@ -8,12 +8,43 @@
 
 <section class="section">
   <div class="container-page max-w-3xl">
-    <!-- Lista e detajuar per cdo sherbim vjen ne faze 2 (brief sek. 9) -->
-    <div class="border border-ink-200 px-8 py-10">
-      <h2 class="font-serif text-2xl">{{ page.placeholderTitle }}</h2>
-      <p class="mt-4 leading-relaxed text-ink-600">{{ page.placeholderBody }}</p>
-      <div class="mt-8 flex flex-wrap gap-3">
+
+    <!-- <details> native: akordeon i aksesueshem me tastiere, pa asnje rresht JS -->
+    <div class="border-y border-ink-200">
+      {{#each page.categories}}
+      <details class="group border-ink-200 {{#unless isLast}}border-b{{/unless}}" {{#if isFirst}}open{{/if}}>
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-5
+                        transition-colors hover:text-gold-700
+                        [&::-webkit-details-marker]:hidden">
+          <span class="font-serif text-lg text-ink-900">{{ sherbimi }}</span>
+          <svg class="h-5 w-5 shrink-0 text-gold-600 transition-transform duration-200 group-open:rotate-180"
+               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m6 9 6 6 6-6"/>
+          </svg>
+        </summary>
+
+        <ul class="space-y-3 pb-6 pr-2">
+          {{#each dokumentet}}
+          <li class="flex gap-3 text-sm leading-relaxed text-ink-700">
+            <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold-600" aria-hidden="true"></span>
+            <span>{{ . }}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </details>
+      {{/each}}
+    </div>
+
+    <p class="mt-8 text-sm leading-relaxed text-ink-500">{{ page.note }}</p>
+
+    <div class="mt-14 rounded-sm border border-ink-200 px-8 py-10 text-center">
+      <h2 class="font-serif text-2xl">{{ page.ctaTitle }}</h2>
+      <p class="mx-auto mt-3 max-w-md leading-relaxed text-ink-600">{{ page.ctaBody }}</p>
+      <div class="mt-7 flex flex-wrap justify-center gap-3">
         <a href="tel:{{ business.phone }}" class="btn-primary">{{ labels.callNow }}</a>
+        <a href="{{ business.whatsappUrl }}" target="_blank" rel="noopener noreferrer"
+           class="btn-outline">{{ labels.whatsapp }}</a>
         <a href="{{ routes.contact }}" class="btn-outline">{{ cta.contact }}</a>
       </div>
     </div>

@@ -31,50 +31,7 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Notary",
-    "name": "{{ business.publicName }}",
-    "url": "{{ canonical }}",
-    "telephone": "{{ business.phone }}",
-    "email": "{{ business.email }}",
-    "areaServed": "{{ business.city }}",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "{{ business.address.street }}, {{ business.address.detail }}",
-      "addressLocality": "{{ business.address.city }}",
-      "postalCode": "{{ business.address.postalCode }}",
-      "addressCountry": "AL"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:30",
-        "closes": "15:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "17:30",
-        "closes": "19:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:30",
-        "closes": "12:30"
-      }
-    ]{{#if isHome}},
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "{{ reviews.aggregate.rating }}",
-      "reviewCount": "{{ reviews.aggregate.count }}",
-      "bestRating": "5",
-      "worstRating": "1"
-    }{{/if}}
-  }
+{{{ jsonLd }}}
   </script>
 </head>
 

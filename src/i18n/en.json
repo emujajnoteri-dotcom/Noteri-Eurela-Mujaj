@@ -135,8 +135,64 @@
       "title": "Required documents",
       "metaDescription": "Documents you need to bring for notarial procedures at the office of Dr. Eurela Mujaj, Shkodër.",
       "lead": "The documents you need to bring vary according to the type of notarial deed.",
-      "placeholderTitle": "In preparation",
-      "placeholderBody": "A detailed list of documents for each service is being prepared. In the meantime, please contact us and we will tell you exactly what to bring for your case."
+      "questionTemplate": "What documents are needed for {s}?",
+      "note": "This list is indicative. Requirements may vary depending on the specific case and applicable legislation.",
+      "ctaTitle": "Your case is not on the list?",
+      "ctaBody": "Contact us and we will tell you exactly what to bring.",
+      "categories": [
+        {
+          "sherbimi": "Sale/Purchase Contract (Real Estate)",
+          "dokumentet": [
+            "Property title / extract from ASHK (State Cadastre Agency)",
+            "ID card or passport of seller and buyer",
+            "Marriage/family certificate (if the property is joint marital property)",
+            "Notarial power of attorney (if either party is represented)",
+            "Proof of settled property taxes/fees (if required)"
+          ]
+        },
+        {
+          "sherbimi": "Power of Attorney",
+          "dokumentet": [
+            "ID document of the person granting the power of attorney",
+            "Full details of the person receiving it (name, father's name, address)",
+            "Clear description of the authorized action(s)",
+            "For powers of attorney intended for use abroad: check apostille requirements in advance"
+          ]
+        },
+        {
+          "sherbimi": "Will",
+          "dokumentet": [
+            "ID document of the testator",
+            "Full details of heirs/beneficiaries (name, father's name, address)",
+            "Description of the assets involved (if specified individually)"
+          ]
+        },
+        {
+          "sherbimi": "Inheritance Certificate",
+          "dokumentet": [
+            "Death certificate of the deceased",
+            "Family certificate",
+            "ID documents of the heirs",
+            "Property titles for inherited assets (if any)"
+          ]
+        },
+        {
+          "sherbimi": "Donation/Gift Contract",
+          "dokumentet": [
+            "ID documents of the donor and the beneficiary",
+            "Property title of the asset being donated",
+            "Family certificate (if the donation is between relatives)"
+          ]
+        },
+        {
+          "sherbimi": "Rental Contract",
+          "dokumentet": [
+            "ID documents of both parties (landlord and tenant)",
+            "Property title of the rented property",
+            "Terms of the agreement (duration, rent amount)"
+          ]
+        }
+      ]
     },
     "about": {
       "title": "About",
@@ -207,7 +263,7 @@
     "source": "Google Reviews",
     "viewAll": "See all on Google",
     "starsAria": "Rated {n} out of 5 stars",
-    "profileUrl": "https://www.google.com/maps/search/?api=1&query=Notere+Eurela+Mujaj+Shkod%C3%ABr",
+    "profileUrl": "https://maps.app.goo.gl/CDGqs2pZht1YT9EY9",
     "aggregate": {
       "rating": "5.0",
       "count": 17,
