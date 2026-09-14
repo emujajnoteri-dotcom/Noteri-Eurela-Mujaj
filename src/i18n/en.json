@@ -200,5 +200,44 @@
     "contactInfo": "Contact",
     "rights": "All rights reserved.",
     "nipt": "VAT ID"
+  },
+  "reviews": {
+    "title": "What clients say",
+    "lead": "Genuine reviews from clients on Google.",
+    "source": "Google Reviews",
+    "viewAll": "See all on Google",
+    "starsAria": "Rated {n} out of 5 stars",
+    "profileUrl": "https://www.google.com/maps/search/?api=1&query=Notere+Eurela+Mujaj+Shkod%C3%ABr",
+    "aggregate": {
+      "rating": "5.0",
+      "count": 17,
+      "suffix": "reviews on Google"
+    },
+    "items": [
+      {
+        "emri": "Fatlum Hasanaj",
+        "teksti": "Excellent service! Highly professional, fast, and reliable. A great partner to work with — truly recommended.",
+        "yje": 5,
+        "data": "~1 year ago"
+      },
+      {
+        "emri": "Griseld Tola",
+        "teksti": "Great service! Very happy with all the staff which gave solution to all my problems. Highly recommend it.",
+        "yje": 5,
+        "data": "~2 years ago"
+      },
+      {
+        "emri": "Lorella Paganini",
+        "teksti": "They are very professional and competent.",
+        "yje": 5,
+        "data": "~4 years ago"
+      },
+      {
+        "emri": "Kevin Berohiti",
+        "teksti": "Fast, accurate and good.",
+        "yje": 5,
+        "data": "~1 year ago"
+      }
+    ]
   }
 }

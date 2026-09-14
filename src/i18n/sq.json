@@ -200,5 +200,44 @@
     "contactInfo": "Kontakt",
     "rights": "Të gjitha të drejtat e rezervuara.",
     "nipt": "NIPT"
+  },
+  "reviews": {
+    "title": "Çfarë thonë klientët",
+    "lead": "Vlerësime të vërteta nga klientë në Google.",
+    "source": "Google Reviews",
+    "viewAll": "Shiko të gjitha në Google",
+    "starsAria": "Vlerësuar {n} nga 5 yje",
+    "profileUrl": "https://www.google.com/maps/search/?api=1&query=Notere+Eurela+Mujaj+Shkod%C3%ABr",
+    "aggregate": {
+      "rating": "5.0",
+      "count": 17,
+      "suffix": "vlerësime në Google"
+    },
+    "items": [
+      {
+        "emri": "Fatlum Hasanaj",
+        "teksti": "Shërbim i shkëlqyer! Shumë profesionale, e shpejtë dhe e besueshme. Një partnere e shkëlqyer për të punuar — vërtet e rekomandueshme.",
+        "yje": 5,
+        "data": "~1 vit më parë"
+      },
+      {
+        "emri": "Griseld Tola",
+        "teksti": "Shërbim i shkëlqyer! Shumë i kënaqur me stafin që gjeti zgjidhje për të gjitha problemet e mia. E rekomandoj fuqimisht.",
+        "yje": 5,
+        "data": "~2 vite më parë"
+      },
+      {
+        "emri": "Lorella Paganini",
+        "teksti": "Janë shumë profesionistë dhe kompetentë.",
+        "yje": 5,
+        "data": "~4 vite më parë"
+      },
+      {
+        "emri": "Kevin Berohiti",
+        "teksti": "Shpejt, saktë dhe mirë.",
+        "yje": 5,
+        "data": "~1 vit më parë"
+      }
+    ]
   }
 }

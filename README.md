@@ -76,7 +76,8 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
       tekstual me ikonë pendë te `src/partials/header.html` dhe `public/favicon.svg`.
 - [ ] **Foto portret** — placeholder te `src/pages/rreth-nesh.html`.
       Fasada e zyrës është vendosur te ballina (`src/assets/img/zyra-fasade.jpg`).
-- [ ] **Reviews** — 3–5 nga Google, faza tjetër.
+- [ ] **Linku i Google Business** — `reviews.profileUrl` te të dy JSON-at është
+      ende një URL kërkimi në Maps; zëvendësoje me linkun e profilit real.
 - [ ] **Dokumentacioni** — lista për çdo shërbim, faza 2.
 - [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
@@ -84,6 +85,14 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
 
 - **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
   arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
+- **Reviews** — `reviews.items` te të dy JSON-at, me fushat
+  `{ emri, teksti, yje, data }`. Yjet nuk ruhen si ikona: `build.mjs` e kthen
+  `yje` në një varg 5-elementësh të ndezur/fikur, që numri të mbetet e dhënë
+  dhe jo prezantim.
+- **AggregateRating** — markup-i është te ballina, brenda objektit `Notary`.
+  Google **nuk** i shfaq yjet për vlerësime të vetë-shërbyera (një biznes që
+  publikon review-t e veta në faqen e vet), ndaj mos prit yje në rezultatet e
+  kërkimit prej këtij markup-i. Yjet vijnë nga profili i Google Business.
 - **WhatsApp** — numri merret nga `business.phone`; `business.whatsappUrl`
   gjenerohet me mesazh të parambushur. Shfaqet si buton pezull në çdo faqe,
   te faqja e kontaktit, te footer-i dhe te CTA e ballinës.

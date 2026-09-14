@@ -59,6 +59,47 @@
 
 <section class="section">
   <div class="container-page">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-serif text-3xl">{{ reviews.title }}</h2>
+      <p class="mt-4 leading-relaxed text-ink-600">{{ reviews.lead }}</p>
+
+      <a href="{{ reviews.profileUrl }}" target="_blank" rel="noopener noreferrer"
+         class="mt-7 inline-flex items-center gap-3 rounded-sm border border-ink-200 px-5 py-3
+                transition-colors hover:border-gold-500">
+        <span class="flex gap-0.5 text-gold-500"><svg class="h-4 w-4 " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="h-4 w-4 " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="h-4 w-4 " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="h-4 w-4 " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="h-4 w-4 " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+        <span class="font-serif text-lg text-ink-900">{{ reviews.aggregate.rating }}</span>
+        <span class="text-sm text-ink-600">
+          ({{ reviews.aggregate.count }} {{ reviews.aggregate.suffix }})
+        </span>
+      </a>
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {{#each reviews.items}}
+      <figure class="flex flex-col border border-ink-200 p-6 transition-colors hover:border-gold-400">
+        <div class="flex gap-0.5" role="img" aria-label="{{ starsLabel }}">
+          {{#each stars}}{{#if on}}<svg class="h-4 w-4 text-gold-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>{{/if}}{{#unless on}}<svg class="h-4 w-4 text-ink-200" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>{{/unless}}{{/each}}
+        </div>
+
+        <blockquote class="mt-4 flex-1 leading-relaxed text-ink-700">{{ teksti }}</blockquote>
+
+        <figcaption class="mt-6 border-t border-ink-100 pt-4">
+          <span class="block font-medium text-ink-900">{{ emri }}</span>
+          <span class="mt-0.5 block text-xs text-ink-500">{{ data }} &middot; {{ reviews.source }}</span>
+        </figcaption>
+      </figure>
+      {{/each}}
+    </div>
+
+    <p class="mt-10 text-center">
+      <a href="{{ reviews.profileUrl }}" target="_blank" rel="noopener noreferrer"
+         class="text-sm text-gold-700 underline-offset-4 hover:underline">{{ reviews.viewAll }}</a>
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-page">
     <div class="rounded-sm border border-ink-200 px-8 py-12 text-center sm:px-16">
       <h2 class="font-serif text-3xl">{{ page.ctaTitle }}</h2>
       <p class="mx-auto mt-4 max-w-xl leading-relaxed text-ink-600">{{ page.ctaBody }}</p>

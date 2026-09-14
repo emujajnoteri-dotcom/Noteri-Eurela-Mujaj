@@ -160,6 +160,16 @@ async function build() {
   const dicts = {};
   for (const l of LOCALES) dicts[l] = JSON.parse(await readFile(join(SRC, 'i18n', `${l}.json`), 'utf8'));
 
+  // Shablloni nuk ka lak numerik, ndaj `yje: 5` kthehet ne nje varg prej 5
+  // elementesh te ndezur/fikur. Keshtu {{#each stars}} punon per cdo vlere,
+  // jo vetem per 5, pa e ndotur JSON-in me te dhena prezantimi.
+  for (const l of LOCALES) {
+    for (const r of dicts[l].reviews?.items ?? []) {
+      r.stars = Array.from({ length: 5 }, (_, i) => ({ on: i < r.yje }));
+      r.starsLabel = dicts[l].reviews.starsAria.replace('{n}', r.yje);
+    }
+  }
+
   const partials = await loadPartials();
   const layout = await readFile(join(SRC, 'layouts', 'base.html'), 'utf8');
 
