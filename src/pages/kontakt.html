@@ -1,0 +1,133 @@
+<section class="border-b border-ink-100 bg-ink-50">
+  <div class="container-page py-16 sm:py-20">
+    <p class="eyebrow">{{ nav.contact }}</p>
+    <h1 class="mt-4 font-serif text-4xl">{{ page.title }}</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-600">{{ page.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-page grid gap-16 lg:grid-cols-2">
+
+    <div>
+      <dl class="space-y-7">
+        <div>
+          <dt class="eyebrow">{{ labels.phone }}</dt>
+          <dd class="mt-2 text-lg">
+            <a href="tel:{{ business.phone }}" class="hover:text-gold-700">{{ business.phoneDisplay }}</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="eyebrow">{{ labels.email }}</dt>
+          <dd class="mt-2 text-lg">
+            <a href="mailto:{{ business.email }}" class="hover:text-gold-700">{{ business.email }}</a>
+          </dd>
+        </div>
+        <div>
+          <dt class="eyebrow">{{ labels.address }}</dt>
+          <dd class="mt-2 leading-relaxed text-ink-700">
+            {{ business.address.street }}<br>
+            {{ business.address.detail }}<br>
+            {{ business.address.city }} {{ business.address.postalCode }}, {{ business.address.country }}
+          </dd>
+        </div>
+        <div>
+          <dt class="eyebrow">{{ labels.openingHours }}</dt>
+          <dd class="mt-3">
+            <table class="w-full max-w-sm text-sm">
+              <tbody>
+                {{#each business.hours}}
+                <tr class="border-b border-ink-100">
+                  <th scope="row" class="py-2.5 text-left font-normal text-ink-600">{{ days }}</th>
+                  <td class="py-2.5 text-right tabular-nums text-ink-900">{{ time }}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <div>
+      <h2 class="font-serif text-2xl">{{ page.formTitle }}</h2>
+
+      <!-- TODO: zevendeso FORM_ENDPOINT ne src/assets/js/main.js me endpoint-in real te Formspree -->
+      <form id="contact-form" class="mt-6 space-y-5" novalidate>
+        <div>
+          <label class="field-label" for="cf-name">{{ page.form.name }}</label>
+          <input class="field-input" id="cf-name" name="name" type="text" required
+                 autocomplete="name" placeholder="{{ page.form.namePlaceholder }}">
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label class="field-label" for="cf-email">{{ page.form.email }}</label>
+            <input class="field-input" id="cf-email" name="email" type="email" required
+                   autocomplete="email" placeholder="{{ page.form.emailPlaceholder }}">
+          </div>
+          <div>
+            <label class="field-label" for="cf-phone">
+              {{ page.form.phone }}
+              <span class="font-normal text-ink-400">({{ page.form.optional }})</span>
+            </label>
+            <input class="field-input" id="cf-phone" name="phone" type="tel"
+                   autocomplete="tel" placeholder="{{ page.form.phonePlaceholder }}">
+          </div>
+        </div>
+
+        <div>
+          <label class="field-label" for="cf-subject">{{ page.form.subject }}</label>
+          <select class="field-input" id="cf-subject" name="subject">
+            <option value="">{{ page.form.subjectPlaceholder }}</option>
+            {{#each services.items}}
+            <option value="{{ . }}">{{ . }}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div>
+          <label class="field-label" for="cf-message">{{ page.form.message }}</label>
+          <textarea class="field-input" id="cf-message" name="message" rows="5" required
+                    placeholder="{{ page.form.messagePlaceholder }}"></textarea>
+        </div>
+
+        <!-- Kurth per bot-e: njerezit nuk e shohin, spam-i e mbush -->
+        <div class="hidden" aria-hidden="true">
+          <label for="cf-company">Company</label>
+          <input id="cf-company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn-primary w-full sm:w-auto"
+                data-label-idle="{{ page.form.submit }}" data-label-sending="{{ page.form.sending }}">
+          {{ page.form.submit }}
+        </button>
+
+        <p class="text-xs leading-relaxed text-ink-500">{{ page.form.privacyNote }}</p>
+
+        <div id="form-success" class="hidden rounded-sm border border-gold-300 bg-gold-50 px-5 py-4" role="status">
+          <p class="font-medium text-ink-900">{{ page.form.successTitle }}</p>
+          <p class="mt-1 text-sm text-ink-700">{{ page.form.successBody }}</p>
+        </div>
+
+        <div id="form-error" class="hidden rounded-sm border border-red-300 bg-red-50 px-5 py-4" role="alert">
+          <p class="font-medium text-ink-900">{{ page.form.errorTitle }}</p>
+          <p class="mt-1 text-sm text-ink-700">{{ page.form.errorBody }}</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="pb-16 sm:pb-24">
+  <div class="container-page">
+    <h2 class="sr-only">{{ page.mapTitle }}</h2>
+    <div class="aspect-[16/7] w-full overflow-hidden rounded-sm border border-ink-200">
+      <iframe
+        title="{{ page.mapTitle }} — {{ business.address.full }}"
+        src="https://www.google.com/maps?q=Rruga+Edith+Durham,+Shkoder+4001,+Albania&output=embed"
+        class="h-full w-full" style="border:0"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+{
+  "name": "noteri-eurela-mujaj",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Website per Zyren Noteriale Dr. Eurela Mujaj (Shkreli), Shkoder",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:html": "node build.mjs",
+    "build:css": "tailwindcss -i ./src/styles/main.css -o ./dist/assets/css/main.css --minify",
+    "build": "npm run build:html && npm run build:css",
+    "dev": "node scripts/dev.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

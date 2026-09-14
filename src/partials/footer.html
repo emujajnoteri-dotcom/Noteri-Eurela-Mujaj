@@ -1,0 +1,41 @@
+<footer class="mt-auto bg-ink-950 text-ink-300">
+  <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-3">
+
+    <div>
+      <p class="font-serif text-lg text-white">{{ business.publicName }}</p>
+      <p class="mt-1 text-xs uppercase tracking-[0.18em] text-gold-500">{{ site.tagline }}</p>
+      <p class="mt-4 text-sm leading-relaxed text-ink-400">
+        {{ footer.nipt }}: {{ business.nipt }}
+      </p>
+    </div>
+
+    <div>
+      <p class="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-gold-500">{{ footer.quickLinks }}</p>
+      <ul class="space-y-2.5 text-sm">
+        {{#each navItems}}
+        <li><a href="{{ href }}" class="transition-colors hover:text-gold-400">{{ label }}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div>
+      <p class="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-gold-500">{{ footer.contactInfo }}</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="tel:{{ business.phone }}" class="transition-colors hover:text-gold-400">{{ business.phoneDisplay }}</a></li>
+        <li><a href="mailto:{{ business.email }}" class="transition-colors hover:text-gold-400">{{ business.email }}</a></li>
+        <li class="pt-1 leading-relaxed text-ink-400">
+          {{ business.address.street }}<br>
+          {{ business.address.detail }}<br>
+          {{ business.address.city }} {{ business.address.postalCode }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-ink-800">
+    <div class="container-page flex flex-col gap-2 py-5 text-xs text-ink-500 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; {{ year }} {{ business.publicName }}. {{ footer.rights }}</p>
+      <p>{{ business.address.city }}, {{ business.address.country }}</p>
+    </div>
+  </div>
+</footer>

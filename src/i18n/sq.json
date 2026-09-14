@@ -1,0 +1,200 @@
+{
+  "locale": "sq",
+  "htmlLang": "sq",
+  "label": "Shqip",
+  "labelShort": "SQ",
+  "routes": {
+    "home": "/",
+    "services": "/sherbimet",
+    "documents": "/dokumentacioni",
+    "about": "/rreth-nesh",
+    "contact": "/kontakt"
+  },
+  "nav": {
+    "home": "Ballina",
+    "services": "Shërbimet",
+    "documents": "Dokumentacioni",
+    "about": "Rreth Noteres",
+    "contact": "Kontakt",
+    "menuOpen": "Hap menunë",
+    "menuClose": "Mbyll menunë",
+    "skipToContent": "Kalo te përmbajtja kryesore"
+  },
+  "site": {
+    "name": "Notere Dr. Eurela Mujaj",
+    "tagline": "Zyrë Noteriale — Shkodër",
+    "titleSuffix": "Notere Dr. Eurela Mujaj — Shkodër"
+  },
+  "business": {
+    "legalName": "Eurela Mujaj",
+    "publicName": "Notere Dr. Eurela Mujaj (Shkreli)",
+    "nipt": "L76317002C",
+    "registered": "17/01/2017",
+    "city": "Shkodër",
+    "since": "2017",
+    "experience": "mbi 9 vite",
+    "phone": "+355696130876",
+    "phoneDisplay": "+355 (0) 69 6130876",
+    "email": "meurela@yahoo.com",
+    "address": {
+      "street": "Rruga \"Edith Durham\", L. Skënderbeg",
+      "detail": "Pll. ngjitur me ADISA, Kati I",
+      "postalCode": "4001",
+      "city": "Shkodër",
+      "country": "Shqipëri",
+      "full": "Rruga \"Edith Durham\", L. Skënderbeg, Pll. ngjitur me ADISA, Kati I, Shkodër 4001"
+    },
+    "hours": [
+      {
+        "days": "E Hënë – E Premte",
+        "time": "08:30 – 15:30  |  17:30 – 19:30"
+      },
+      {
+        "days": "E Shtunë",
+        "time": "08:30 – 12:30"
+      },
+      {
+        "days": "E Diel",
+        "time": "Mbyllur"
+      }
+    ]
+  },
+  "labels": {
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresa",
+    "hours": "Orari",
+    "openingHours": "Orari i punës",
+    "getDirections": "Shiko në hartë",
+    "callNow": "Telefono tani",
+    "sendEmail": "Dërgo email",
+    "photoPending": "foto — në pritje",
+    "portraitPending": "portret — në pritje"
+  },
+  "cta": {
+    "quote": "Kontaktoni për ofertë",
+    "contact": "Na kontaktoni",
+    "allServices": "Të gjitha shërbimet",
+    "seeDocuments": "Dokumentet e nevojshme"
+  },
+  "services": {
+    "intro": "Zyra Noteriale ofron shërbime të plota noteriale për individë, familje dhe subjekte juridike, duke garantuar profesionalizëm, paanshmëri, konfidencialitet dhe siguri juridike.",
+    "items": [
+      "Hartim dhe redaktim të akteve dhe kontratave noteriale",
+      "Kontrata shitblerjeje, dhurimi, shkëmbimi dhe kalimi pronësie",
+      "Veprime juridike lidhur me pasuritë e paluajtshme dhe regjistrimin e tyre",
+      "Kontrata sipërmarrjeje, porosie dhe marrëdhënie të tjera në fushën e ndërtimit",
+      "Testamente, dëshmi trashëgimie dhe akte të tjera të trashëgimisë",
+      "Prokura dhe deklarata noteriale",
+      "Vërtetime dhe njësime me origjinalin të dokumenteve",
+      "Veprime noteriale për shoqëri tregtare dhe persona juridikë",
+      "Kontrata dhe akte që lidhen me marrëdhëniet familjare dhe pasurore",
+      "Legalizim/njohje të nënshkrimeve dhe akte të tjera noteriale",
+      "Këshillim dhe asistencë juridiko-noteriale",
+      "Shërbime të tjera noteriale sipas legjislacionit në fuqi",
+      "Përkthime në të gjitha gjuhët"
+    ]
+  },
+  "pages": {
+    "home": {
+      "title": "Zyrë Noteriale në Shkodër",
+      "metaDescription": "Zyra Noteriale e Dr. Eurela Mujaj (Shkreli) në Shkodër — kontrata, prokura, testamente, vërtetime dhe shërbime të plota noteriale që prej 2017.",
+      "heroTitle": "Siguri juridike, me përkushtim dhe paanshmëri",
+      "heroSubtitle": "Zyrë noteriale në Shkodër, në shërbim të individëve, familjeve dhe subjekteve juridike që prej 2017.",
+      "trustTitle": "Pse zyra jonë",
+      "trust": [
+        {
+          "title": "Eksperiencë e provuar",
+          "body": "Në shërbim të qytetarëve të Shkodrës që prej vitit 2017, me mbi 9 vite praktikë noteriale."
+        },
+        {
+          "title": "Konfidencialitet i plotë",
+          "body": "Çdo akt dhe e dhënë trajtohet me diskrecion të plotë, sipas detyrimeve ligjore të profesionit noterial."
+        },
+        {
+          "title": "Arkivë noteriale e trashëguar",
+          "body": "Administrojmë arkivën e ish-noteres Genciana Shkreli, në ndihmë të klientëve që kërkojnë akte të mëparshme."
+        }
+      ],
+      "servicesTitle": "Shërbimet tona",
+      "servicesLead": "Shërbime të plota noteriale, nga kontratat e pronësisë te prokurat dhe trashëgimia.",
+      "ctaTitle": "Keni nevojë për një akt noterial?",
+      "ctaBody": "Na kontaktoni për të diskutuar rastin tuaj dhe për të marrë një ofertë."
+    },
+    "services": {
+      "title": "Shërbimet",
+      "metaDescription": "Shërbime të plota noteriale në Shkodër: kontrata shitblerjeje, prokura, testamente, vërtetime, akte për shoqëri tregtare dhe përkthime.",
+      "lead": "Shërbime të plota noteriale për individë, familje dhe subjekte juridike.",
+      "pricingNote": "Tarifat përcaktohen sipas natyrës së aktit dhe legjislacionit në fuqi. Na kontaktoni për një ofertë të personalizuar."
+    },
+    "documents": {
+      "title": "Dokumentet e nevojshme",
+      "metaDescription": "Dokumentet që duhet të sillni për veprimet noteriale në zyrën e Dr. Eurela Mujaj, Shkodër.",
+      "lead": "Lista e dokumenteve që duhet të sillni ndryshon sipas llojit të aktit noterial.",
+      "placeholderTitle": "Në përgatitje",
+      "placeholderBody": "Lista e detajuar e dokumenteve për çdo shërbim është duke u përgatitur. Deri atëherë, ju lutemi na kontaktoni dhe ju udhëzojmë saktësisht se çfarë duhet të sillni për rastin tuaj."
+    },
+    "about": {
+      "title": "Rreth Noteres",
+      "metaDescription": "Notere Dr. Eurela Mujaj (Shkreli) — zyrë noteriale në Shkodër që prej vitit 2017.",
+      "lead": "Notere Dr. Eurela Mujaj (Shkreli)",
+      "bioTitle": "Përvoja",
+      "bio": "Zyra Noteriale e Dr. Eurela Mujaj (Shkreli) ushtron aktivitetin në Shkodër që prej vitit 2017, me mbi 9 vite përvojë në hartimin dhe vërtetimin e akteve noteriale për individë, familje dhe subjekte juridike.",
+      "archiveTitle": "Arkiva noteriale",
+      "archiveBody": "Zyra administron arkivën noteriale të ish-noteres Genciana Shkreli. Klientët që kërkojnë akte të lëshuara më parë nga kjo zyrë mund të drejtohen tek ne për kopje dhe vërtetime.",
+      "valuesTitle": "Parimet e punës",
+      "values": [
+        {
+          "title": "Profesionalizëm",
+          "body": "Çdo akt hartohet me kujdes dhe në përputhje të plotë me legjislacionin në fuqi."
+        },
+        {
+          "title": "Paanshmëri",
+          "body": "Noterja vepron si figurë e paanshme, duke mbrojtur interesat ligjore të të gjitha palëve."
+        },
+        {
+          "title": "Konfidencialitet",
+          "body": "Informacioni i klientëve ruhet me diskrecion të plotë."
+        },
+        {
+          "title": "Siguri juridike",
+          "body": "Aktet noteriale garantojnë vlerë provuese dhe qëndrueshmëri ligjore."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "metaDescription": "Kontaktoni Zyrën Noteriale Dr. Eurela Mujaj në Shkodër — adresa, orari, telefoni dhe formulari i kontaktit.",
+      "lead": "Na kontaktoni për të diskutuar rastin tuaj ose për të caktuar një takim.",
+      "formTitle": "Dërgoni një mesazh",
+      "mapTitle": "Vendndodhja",
+      "form": {
+        "name": "Emri dhe mbiemri",
+        "namePlaceholder": "Emri juaj",
+        "email": "Email",
+        "emailPlaceholder": "email@shembull.com",
+        "phone": "Telefon",
+        "phonePlaceholder": "+355 6X XXX XXXX",
+        "subject": "Lloji i shërbimit",
+        "subjectPlaceholder": "Zgjidhni një shërbim",
+        "message": "Mesazhi",
+        "messagePlaceholder": "Përshkruani shkurtimisht rastin tuaj...",
+        "submit": "Dërgo mesazhin",
+        "sending": "Duke dërguar...",
+        "optional": "opsionale",
+        "required": "e detyrueshme",
+        "successTitle": "Mesazhi u dërgua",
+        "successBody": "Faleminderit! Do t'ju kontaktojmë sa më shpejt.",
+        "errorTitle": "Dërgimi dështoi",
+        "errorBody": "Ndodhi një gabim. Ju lutemi provoni sërish ose na telefononi drejtpërdrejt.",
+        "privacyNote": "Të dhënat tuaja përdoren vetëm për t'ju kontaktuar në lidhje me kërkesën."
+      }
+    }
+  },
+  "footer": {
+    "quickLinks": "Lidhje të shpejta",
+    "contactInfo": "Kontakt",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "nipt": "NIPT"
+  }
+}

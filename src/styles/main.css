@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Tokenet e brandit — paleta gold/zi/bardhe sipas kartvizites (brief sek. 4).
+   Gold-i bazë është #c9a227; shkallet rreth tij jane derivuar per kontrast.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-gold-50:  #fdfaef;
+  --color-gold-100: #faf2d6;
+  --color-gold-200: #f4e3a8;
+  --color-gold-300: #ecd070;
+  --color-gold-400: #e0b940;
+  --color-gold-500: #c9a227;
+  --color-gold-600: #a8841d;
+  --color-gold-700: #86671a;
+  --color-gold-800: #6e541c;
+  --color-gold-900: #5c461c;
+  --color-gold-950: #35270c;
+
+  --color-ink-50:  #f7f7f6;
+  --color-ink-100: #e6e6e3;
+  --color-ink-200: #cdcdc8;
+  --color-ink-300: #a9a9a1;
+  --color-ink-400: #85857b;
+  --color-ink-500: #6b6b61;
+  --color-ink-600: #55554d;
+  --color-ink-700: #454540;
+  --color-ink-800: #2b2b28;
+  --color-ink-900: #1a1a18;
+  --color-ink-950: #0d0d0c;
+
+  --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink-800 antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif text-ink-900;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Fokus i dukshem per navigim me tastiere — kerkese aksesueshmerie */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold-600;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* `btn` deklarohet si @utility sepse variantet me poshte e perdorin me @apply —
+   ne Tailwind v4 kete e lejon vetem @utility, jo nje klase ne @layer components. */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3
+         text-sm font-medium tracking-wide transition-colors duration-200;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn-primary {
+    @apply btn bg-gold-600 text-white hover:bg-gold-700;
+  }
+
+  .btn-outline {
+    @apply btn border border-ink-300 text-ink-800 hover:border-gold-600 hover:text-gold-700;
+  }
+
+  .btn-on-dark {
+    @apply btn border border-gold-500/60 text-gold-300 hover:bg-gold-500 hover:text-ink-950;
+  }
+
+  .section {
+    @apply py-16 sm:py-24;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-gold-700;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-ink-800;
+  }
+
+  .field-input {
+    @apply w-full rounded-sm border border-ink-200 bg-white px-4 py-2.5 text-ink-900
+           placeholder:text-ink-400 focus:border-gold-600 focus:ring-1 focus:ring-gold-600
+           focus:outline-none;
+  }
+}

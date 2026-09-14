@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ htmlLang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} — {{ site.titleSuffix }}</title>
+  <meta name="description" content="{{ page.metaDescription }}">
+
+  <link rel="canonical" href="{{ canonical }}">
+  {{#each alternates}}
+  <link rel="alternate" hreflang="{{ hreflang }}" href="{{ href }}">
+  {{/each}}
+  <link rel="alternate" hreflang="x-default" href="{{ defaultHref }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{ locale }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ page.title }} — {{ site.titleSuffix }}">
+  <meta property="og:description" content="{{ page.metaDescription }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ siteUrl }}/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#c9a227">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Notary",
+    "name": "{{ business.publicName }}",
+    "url": "{{ canonical }}",
+    "telephone": "{{ business.phone }}",
+    "email": "{{ business.email }}",
+    "areaServed": "{{ business.city }}",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ business.address.street }}, {{ business.address.detail }}",
+      "addressLocality": "{{ business.address.city }}",
+      "postalCode": "{{ business.address.postalCode }}",
+      "addressCountry": "AL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:30",
+        "closes": "15:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "17:30",
+        "closes": "19:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:30",
+        "closes": "12:30"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="flex min-h-screen flex-col">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-sm focus:bg-ink-900 focus:px-4 focus:py-2 focus:text-white">
+    {{ nav.skipToContent }}
+  </a>
+
+  {{> header}}
+
+  <main id="main" class="flex-1">
+    {{{ content }}}
+  </main>
+
+  {{> footer}}
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

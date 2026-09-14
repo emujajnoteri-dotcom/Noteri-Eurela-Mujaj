@@ -1,0 +1,57 @@
+<!-- Logo: placeholder tekstual me ikone pendë deri sa te vije logo_reference.png (brief sek. 4) -->
+<header class="sticky top-0 z-40 border-b border-ink-100 bg-white/95 backdrop-blur">
+  <div class="container-page flex h-20 items-center justify-between gap-4">
+
+    <a href="{{ routes.home }}" class="flex items-center gap-3">
+      <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-ink-900">
+        <svg class="h-5 w-5 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 4C11 5 7 11 6.5 16.5L4 20"/>
+          <path d="M20 4c0 8-4.5 12-11.5 12.5"/>
+          <path d="M8.5 16.5c4-1 7-3.5 8.5-7"/>
+        </svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-serif text-base font-semibold text-ink-900">{{ site.name }}</span>
+        <span class="block text-[11px] uppercase tracking-[0.18em] text-gold-700">{{ site.tagline }}</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="{{ nav.home }}">
+      {{#each navItems}}
+      <a href="{{ href }}"
+         class="text-sm transition-colors hover:text-gold-700{{#if isActive}} text-gold-700 font-medium{{/if}}{{#unless isActive}} text-ink-700{{/unless}}"
+         {{#if isActive}}aria-current="page"{{/if}}>{{ label }}</a>
+      {{/each}}
+
+      <a href="{{ switcher.href }}" hreflang="{{ switcher.lang }}" lang="{{ switcher.lang }}"
+         class="border-l border-ink-200 pl-7 text-sm text-ink-500 transition-colors hover:text-gold-700">
+        {{ switcher.labelShort }}
+      </a>
+
+      <a href="tel:{{ business.phone }}" class="btn-primary">{{ labels.callNow }}</a>
+    </nav>
+
+    <button type="button" id="menu-toggle"
+            class="-mr-2 inline-flex h-10 w-10 items-center justify-center rounded-sm text-ink-800 lg:hidden"
+            aria-controls="mobile-menu" aria-expanded="false" aria-label="{{ nav.menuOpen }}"
+            data-label-open="{{ nav.menuOpen }}" data-label-close="{{ nav.menuClose }}">
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-ink-100 bg-white lg:hidden">
+    <nav class="container-page flex flex-col py-3">
+      {{#each navItems}}
+      <a href="{{ href }}"
+         class="border-b border-ink-50 py-3 text-sm{{#if isActive}} text-gold-700 font-medium{{/if}}{{#unless isActive}} text-ink-700{{/unless}}"
+         {{#if isActive}}aria-current="page"{{/if}}>{{ label }}</a>
+      {{/each}}
+      <a href="{{ switcher.href }}" hreflang="{{ switcher.lang }}" lang="{{ switcher.lang }}"
+         class="border-b border-ink-50 py-3 text-sm text-ink-500">{{ switcher.label }}</a>
+      <a href="tel:{{ business.phone }}" class="btn-primary mt-4 mb-2">{{ labels.callNow }}</a>
+    </nav>
+  </div>
+</header>

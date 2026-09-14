@@ -1,0 +1,21 @@
+<section class="border-b border-ink-100 bg-ink-50">
+  <div class="container-page py-16 sm:py-20">
+    <p class="eyebrow">{{ site.tagline }}</p>
+    <h1 class="mt-4 font-serif text-4xl">{{ page.title }}</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-600">{{ page.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-page max-w-3xl">
+    <!-- Lista e detajuar per cdo sherbim vjen ne faze 2 (brief sek. 9) -->
+    <div class="border border-ink-200 px-8 py-10">
+      <h2 class="font-serif text-2xl">{{ page.placeholderTitle }}</h2>
+      <p class="mt-4 leading-relaxed text-ink-600">{{ page.placeholderBody }}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="tel:{{ business.phone }}" class="btn-primary">{{ labels.callNow }}</a>
+        <a href="{{ routes.contact }}" class="btn-outline">{{ cta.contact }}</a>
+      </div>
+    </div>
+  </div>
+</section>

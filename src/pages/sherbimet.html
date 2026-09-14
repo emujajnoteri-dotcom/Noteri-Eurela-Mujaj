@@ -1,0 +1,33 @@
+<section class="border-b border-ink-100 bg-ink-50">
+  <div class="container-page py-16 sm:py-20">
+    <p class="eyebrow">{{ site.tagline }}</p>
+    <h1 class="mt-4 font-serif text-4xl">{{ page.title }}</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-ink-600">{{ page.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-page">
+    <p class="max-w-3xl border-l-2 border-gold-500 pl-6 text-lg leading-relaxed text-ink-700">
+      {{ services.intro }}
+    </p>
+
+    <ul class="mt-14 grid gap-x-12 gap-y-1 lg:grid-cols-2">
+      {{#each services.items}}
+      <li class="flex items-start gap-4 border-b border-ink-100 py-5">
+        <span class="mt-0.5 font-serif text-sm text-gold-600 tabular-nums">{{ @number }}</span>
+        <span class="text-ink-800">{{ . }}</span>
+      </li>
+      {{/each}}
+    </ul>
+
+    <!-- Cmimet nuk shfaqen — kerkese e klientes (brief sek. 6) -->
+    <div class="mt-14 rounded-sm bg-ink-50 px-8 py-10">
+      <p class="max-w-2xl leading-relaxed text-ink-700">{{ page.pricingNote }}</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="{{ routes.contact }}" class="btn-primary">{{ cta.quote }}</a>
+        <a href="{{ routes.documents }}" class="btn-outline">{{ cta.seeDocuments }}</a>
+      </div>
+    </div>
+  </div>
+</section>
