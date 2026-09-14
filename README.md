@@ -74,15 +74,18 @@ Domain-i ende nuk është regjistruar. Kur të jetë, vendos variablin e mjedisi
       shfaq mesazhin e gabimit.
 - [ ] **Logo** — `logo_reference.png` nga kartvizita; tani është placeholder
       tekstual me ikonë pendë te `src/partials/header.html` dhe `public/favicon.svg`.
-- [ ] **Foto** — portret + brenda zyrës; placeholder-at janë te
-      `src/pages/index.html` dhe `src/pages/rreth-nesh.html`.
-- [ ] **`og-image.jpg`** — te `src/assets/img/`, referuar nga `base.html`.
+- [ ] **Foto portret** — placeholder te `src/pages/rreth-nesh.html`.
+      Fasada e zyrës është vendosur te ballina (`src/assets/img/zyra-fasade.jpg`).
 - [ ] **Reviews** — 3–5 nga Google, faza tjetër.
 - [ ] **Dokumentacioni** — lista për çdo shërbim, faza 2.
 - [ ] **Doktoratura** — fusha/viti, nëse do specifikohet te "Rreth Noteres".
 
 ## Shënime përmbajtjeje
 
-- **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Kontaktoni për ofertë".
+- **Çmimet nuk shfaqen** — kërkesë e klientes. CTA është "Na kontaktoni";
+  arsyeja shpjegohet te shënimi i tarifave në faqen e shërbimeve.
+- **WhatsApp** — numri merret nga `business.phone`; `business.whatsappUrl`
+  gjenerohet me mesazh të parambushur. Shfaqet si buton pezull në çdo faqe,
+  te faqja e kontaktit, te footer-i dhe te CTA e ballinës.
 - **Eksperienca** shkruhet "mbi 9 vite" ose "që prej 2017" — jo "10 vite",
   për saktësi kundrejt regjistrimit në QKB (17/01/2017).

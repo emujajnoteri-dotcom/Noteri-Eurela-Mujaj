@@ -11,7 +11,7 @@
     "contact": "/kontakt"
   },
   "nav": {
-    "home": "Ballina",
+    "home": "Kreu",
     "services": "Shërbimet",
     "documents": "Dokumentacioni",
     "about": "Rreth Noteres",
@@ -57,7 +57,9 @@
         "days": "E Diel",
         "time": "Mbyllur"
       }
-    ]
+    ],
+    "whatsapp": "355696130876",
+    "whatsappUrl": "https://wa.me/355696130876?text=P%C3%ABrsh%C3%ABndetje%21%20D%C3%ABshiroj%20informacion%20p%C3%ABr%20nj%C3%AB%20sh%C3%ABrbim%20noterial."
   },
   "labels": {
     "phone": "Telefon",
@@ -68,11 +70,12 @@
     "getDirections": "Shiko në hartë",
     "callNow": "Telefono tani",
     "sendEmail": "Dërgo email",
-    "photoPending": "foto — në pritje",
-    "portraitPending": "portret — në pritje"
+    "portraitPending": "portret — në pritje",
+    "whatsapp": "Shkruaj në WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "whatsappAria": "Na shkruani në WhatsApp"
   },
   "cta": {
-    "quote": "Kontaktoni për ofertë",
     "contact": "Na kontaktoni",
     "allServices": "Të gjitha shërbimet",
     "seeDocuments": "Dokumentet e nevojshme"
@@ -119,7 +122,8 @@
       "servicesTitle": "Shërbimet tona",
       "servicesLead": "Shërbime të plota noteriale, nga kontratat e pronësisë te prokurat dhe trashëgimia.",
       "ctaTitle": "Keni nevojë për një akt noterial?",
-      "ctaBody": "Na kontaktoni për të diskutuar rastin tuaj dhe për të marrë një ofertë."
+      "ctaBody": "Na kontaktoni për të diskutuar rastin tuaj dhe për të marrë një ofertë.",
+      "heroImageAlt": "Fasada e Zyrës Noteriale Dr. Eurela Mujaj në Shkodër, e ndriçuar në mbrëmje"
     },
     "services": {
       "title": "Shërbimet",

@@ -57,7 +57,9 @@
         "days": "Sunday",
         "time": "Closed"
       }
-    ]
+    ],
+    "whatsapp": "355696130876",
+    "whatsappUrl": "https://wa.me/355696130876?text=Hello%21%20I%20would%20like%20information%20about%20a%20notarial%20service."
   },
   "labels": {
     "phone": "Phone",
@@ -68,12 +70,13 @@
     "getDirections": "View on map",
     "callNow": "Call now",
     "sendEmail": "Send email",
-    "photoPending": "photo — pending",
-    "portraitPending": "portrait — pending"
+    "portraitPending": "portrait — pending",
+    "whatsapp": "Message on WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "whatsappAria": "Message us on WhatsApp"
   },
   "cta": {
-    "quote": "Contact us for a quote",
-    "contact": "Get in touch",
+    "contact": "Contact us",
     "allServices": "All services",
     "seeDocuments": "Required documents"
   },
@@ -119,7 +122,8 @@
       "servicesTitle": "Our services",
       "servicesLead": "Comprehensive notarial services, from property contracts to powers of attorney and inheritance.",
       "ctaTitle": "Do you need a notarial deed?",
-      "ctaBody": "Contact us to discuss your case and receive a quote."
+      "ctaBody": "Contact us to discuss your case and receive a quote.",
+      "heroImageAlt": "Facade of the Notary Office of Dr. Eurela Mujaj in Shkodër, illuminated at night"
     },
     "services": {
       "title": "Services",

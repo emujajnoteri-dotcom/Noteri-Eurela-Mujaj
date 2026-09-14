@@ -5,17 +5,18 @@
       <h1 class="mt-5 font-serif text-4xl leading-tight text-white sm:text-5xl">{{ page.heroTitle }}</h1>
       <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink-300">{{ page.heroSubtitle }}</p>
       <div class="mt-9 flex flex-wrap gap-3">
-        <a href="{{ routes.contact }}" class="btn-primary">{{ cta.quote }}</a>
+        <a href="{{ routes.contact }}" class="btn-primary">{{ cta.contact }}</a>
         <a href="{{ routes.services }}" class="btn-on-dark">{{ cta.allServices }}</a>
       </div>
     </div>
 
-    <!-- PLACEHOLDER: zevendeso me foto portret / brenda zyres (brief sek. 8) -->
-    <div class="aspect-[4/3] w-full rounded-sm border border-ink-800 bg-ink-900/60">
-      <div class="flex h-full items-center justify-center text-sm text-ink-600">
-        {{ labels.photoPending }}
-      </div>
-    </div>
+    <figure class="overflow-hidden rounded-sm border border-ink-800">
+      <img src="/assets/img/zyra-fasade.jpg"
+           alt="{{ page.heroImageAlt }}"
+           width="954" height="768"
+           class="aspect-[4/3] w-full object-cover"
+           fetchpriority="high" decoding="async">
+    </figure>
   </div>
 </section>
 
@@ -63,6 +64,8 @@
       <p class="mx-auto mt-4 max-w-xl leading-relaxed text-ink-600">{{ page.ctaBody }}</p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a href="{{ routes.contact }}" class="btn-primary">{{ cta.contact }}</a>
+        <a href="{{ business.whatsappUrl }}" target="_blank" rel="noopener noreferrer"
+           class="btn-outline">{{ labels.whatsapp }}</a>
         <a href="tel:{{ business.phone }}" class="btn-outline">{{ business.phoneDisplay }}</a>
       </div>
     </div>
